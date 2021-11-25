@@ -1,0 +1,42 @@
+.hexaOut{
+    height: 21px;   /* should depend on unit (gameVarConst) */
+    width:  21px;
+    clip-path: polygon(25% 87%, 75% 87%, 100% 43%, 75% 0%, 25% 0%, 0% 43%);
+
+    position: absolute;
+    display:flex;
+}
+
+.hexaIn{
+    height: 19px;   /* should depend on unit (gameVarConst) */
+    width:  19px;
+    background-color: black;
+    clip-path: polygon(25% 87%, 75% 87%, 100% 43%, 75% 0%, 25% 0%, 0% 43%);
+
+    margin: auto;
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 8px;
+
+    transition-property: background-color;
+    transition-duration: 300ms;
+
+}
+
+.alive{
+    background-color: deepskyblue;
+
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.neutral{
+    background-color: #6a6a6a;
+}
+.hostile{
+    background-color: #6b4646;
+}
+.fertile{
+    background-color: #466b4c;
+}

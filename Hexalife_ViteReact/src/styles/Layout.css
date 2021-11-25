@@ -1,0 +1,38 @@
+.info {
+    /* ok */
+}
+
+span{
+    width:20px;
+    height:20px;
+    text-align:center;
+    vertical-align: middle;
+    color:#fff;
+}
+
+.playing{
+    animation: turn360 infinite linear;
+}
+
+.speed0 {
+    animation-duration: 20000ms;
+}
+.speed1 {
+    animation-duration: 2000ms;
+}
+.speed2 {
+    animation-duration: 1000ms;
+}
+.speed3 {
+    animation-duration: 500ms;
+}
+.speed4 {
+    animation-duration: 250ms;
+}
+.speed5 {
+    animation-duration: 100ms;
+}
+
+@keyframes turn360 {
+    100% { transform: rotate(360deg); }
+}
