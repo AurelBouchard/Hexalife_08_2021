@@ -6,8 +6,8 @@ import {maxSpeed} from "../../models/gameVarConst";
  * Return a styled range selector.
  * Allow to change the time between generations (turns).
  *
- * @param speed 1 =< Integer =< 5,
- * @param onChangeSpeed f,
+ * @param {number} speed 1 =< Integer =< 5,
+ * @param onChangeSpeed
  * @returns {JSX.Element}
  * @constructor
  * @see gameVarConst.js

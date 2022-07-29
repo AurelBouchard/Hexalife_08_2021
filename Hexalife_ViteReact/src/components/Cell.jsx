@@ -4,11 +4,11 @@ import '../styles/Cell.css';
 /**
  * Return a styled div according to data given in props.
  *
- * @param id Integer
- * @param content 'alive' || any
- * @param coordX Float
- * @param coordY Float
- * @param comfort 'neutral' || 'fertile' || 'hostile'
+ * @param {number} id Integer
+ * @param {string} content 'alive' || any
+ * @param {number} coordX Float
+ * @param {number} coordY Float
+ * @param {string} comfort 'neutral' || 'fertile' || 'hostile'
  * @returns {JSX.Element}
  * @constructor
  */

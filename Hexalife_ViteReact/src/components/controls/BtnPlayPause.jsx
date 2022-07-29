@@ -4,8 +4,8 @@ import React from 'react';
 /**
  * Return a styled button.
  *
- * @param togglePlayPause f,
- * @param isPlaying boolean,
+ * @param togglePlayPause
+ * @param {boolean} isPlaying
  * @returns {JSX.Element}
  * @constructor
  */

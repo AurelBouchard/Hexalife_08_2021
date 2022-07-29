@@ -4,8 +4,8 @@ import React from 'react';
 /**
  * Return a styled button.
  *
- * @param field Field object we are working on,
- * @param handleReset f,
+ * @param {Field} field Field object we are working on,
+ * @param handleReset
  * @returns {JSX.Element}
  * @constructor
  */

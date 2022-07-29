@@ -5,8 +5,8 @@ import React from "react";
  * Return a styled range selector.
  * Allow to change the initial number of living cells.
  *
- * @param density 0.1 =< Float =< 0.9, % of chance that each cell is living,
- * @param onChangeDensity f,
+ * @param {number} density 0.1 =< Float =< 0.9, % of chance that each cell is living
+ * @param onChangeDensity
  * @returns {JSX.Element}
  * @constructor
  */

@@ -7,8 +7,8 @@ import Checkbox from "./Checkbox";
  * One checkbox is for choose what number of surrounding alive cells will kill the the surrounded cell.
  * The other is for choose what number of alive cell will make a cell comes to life.
  *
- * @param rules Rules object : { 'spawn': [Integer], 'die': [Integer], 'changing': [Integer]},
- * @param onChangeRules f,
+ * @param {{'spawn':number[], 'die': number[], 'changing': number[]}} rules
+ * @param onChangeRules
  * @returns {JSX.Element}
  * @constructor
  */

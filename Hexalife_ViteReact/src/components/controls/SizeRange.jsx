@@ -5,8 +5,8 @@ import React from "react";
  * Return a styled range selector.
  * Allow to change the size of the field.
  *
- * @param size 6 =< Integer =< 30, n of layer around the central cell,
- * @param onChangeSize f,
+ * @param {number} size 6 =< Integer =< 30, n of layer around the central cell
+ * @param onChangeSize
  * @returns {JSX.Element}
  * @constructor
  */

@@ -11,18 +11,18 @@ import Rules from "./controls/Rules";
 /**
  * Display the control panel.
  *
- * @param field Field object we are working on,
- * @param isPlaying boolean,
- * @param handleReset f,
- * @param togglePlayPause f,
- * @param speed 1 =< Integer =< 5,
- * @param onChangeSpeed f,
- * @param size 6 =< Integer =< 30, n of layer around the central cell,
- * @param onChangeSize f,
- * @param density 0.1 =< Float =< 0.9, % of chance that each cell is living,
- * @param onChangeDensity f,
- * @param rules Rules object : { 'spawn': [Integer], 'die': [Integer], 'changing': [Integer]},
- * @param onChangeRules f
+ * @param {Field} field Field object we are working on
+ * @param {boolean} isPlaying
+ * @param handleReset
+ * @param togglePlayPause
+ * @param {number} speed 1 =< Integer =< 5
+ * @param onChangeSpeed
+ * @param {number} size 6 =< Integer =< 30, n of layer around the central cell
+ * @param onChangeSize
+ * @param {number} density 0.1 =< Float =< 0.9, % of chance that each cell is living
+ * @param onChangeDensity
+ * @param {{'spawn':number[], 'die': number[], 'changing': number[]}} rules
+ * @param onChangeRules
  * @returns {JSX.Element}
  * @constructor
  */
