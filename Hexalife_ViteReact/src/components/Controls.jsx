@@ -21,7 +21,7 @@ import Rules from "./controls/Rules";
  * @param onChangeSize
  * @param {number} density 0.1 =< Float =< 0.9, % of chance that each cell is living
  * @param onChangeDensity
- * @param {{'spawn':number[], 'die': number[], 'changing': number[]}} rules
+ * @param {{spawn: number[], die: number[], changing: number[]}} rules
  * @param onChangeRules
  * @returns {JSX.Element}
  * @constructor

@@ -7,7 +7,12 @@ import App from './App'
 // import models
 import Field from './models/Field.js';
 
+
 // create grid
+/**
+ * Unique Field object
+ * @type {Field}
+ */
 const field = new Field();
 
 // first launching : giving neighbourhood to each cell

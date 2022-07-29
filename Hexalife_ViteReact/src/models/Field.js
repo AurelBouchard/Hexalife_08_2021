@@ -2,21 +2,52 @@ import Cell from "./Cell";
 import Game from "./Game"
 import {comfortList, contentList, offsetX, offsetY} from "./gameVarConst";
 
+
+/**
+ * Class that allow to create an object 'field' that contains Cells.
+ * MUST BE UNIQUE !
+ *
+ */
+
+
 export default class Field {
+    /**
+     * Create a field with a game, a list of Id, a linkedCells object and a list of living units.
+     * See initial parameters here :
+     *
+     * {@link /Hexalife/Hexalife_ViteReact/src/models/gameVarConst.js}
+     *
+     * {@link Game#constructor}
+     *
+     * @see Game
+     * @constructor
+     */
     constructor() {
         this.game = new Game();
         this.listOfId = this.generateIds(this.game.maxId);         // [numbers]
         this.linkedCells = [];      // [objects cell]
         this.idOfLivingUnits = [];      // [numbers]
     }
-
+    
+    /**
+     * Return an array of integer from 0 to lastId.
+     *
+     * @param {number} lastId
+     * @returns {number[]}
+     */
     generateIds(lastId) {
         let list = [];
         for (let i=0; i<= lastId; i++) { list.push(i) }
         return list;
     }
 
-    // linking cells to each others
+    
+    /**
+     * Linking cells to each others,
+     * This might be called one time.
+     *
+     * @returns {Promise<void>}
+     */
     async generateLinking() {
         let nextId = 1;
         this.linkedCells = [];
@@ -76,8 +107,12 @@ export default class Field {
 
         });
     }
-
-
+    
+    
+    /**
+     * Remove all living cells.
+     * @returns {Promise<void>}
+     */
     async clearGrid() {
         //console.log("/////////// CLEAR //////////////")
 
@@ -95,7 +130,12 @@ export default class Field {
         // now there is no living units
         this.idOfLivingUnits = [];
     }
-
+    
+    /**
+     * Go through each cell, check content, if it's not a boundary make it alive according to chanceOfLife and set a random confort.
+     * @see gameVarConst.js
+     * @returns {Promise<void>}
+     */
     async refillCells() {
         //console.log("/////////// REFILL //////////////")
 
@@ -113,7 +153,11 @@ export default class Field {
             }
         })
     }
-
+    
+    /**
+     * Update the list of living cells id.
+     * @returns {Promise<void>}
+     */
     async updateLivingUnitsList() {
         //console.log("/////////// UPDATE LUL //////////////")
 
@@ -124,7 +168,11 @@ export default class Field {
         })
         //console.log(this.idOfLivingUnits)
     }
-
+    
+    /**
+     * If rules are changed
+     * @returns {Promise<void>}
+     */
     async applyRules() {
         //console.log("apply rule from Field")
         //console.log(this.idOfLivingUnits)
@@ -137,15 +185,26 @@ export default class Field {
 
         this.updateLivingUnitsList().then();
     }
-
+    
+    /**
+     * If size change, some Ids will be create or deleted
+     * @returns {Promise<void>}
+     */
     async updateListOfIds() {
         this.listOfId = this.generateIds(this.game.maxId);
     }
 
 }
 
+
+/**
+ * Count how many living cells are surrounding by comparing the neighbourhood and the list of living Ids.
+ * This function don't determine position of living units.
+ * @param neighbourhood
+ * @param listOfId
+ * @returns {number}
+ */
 function nOfLivingAround(neighbourhood, listOfId) {
-    // this function don't determine position of living units
     const common = neighbourhood.filter(id => listOfId.includes(id));
     return common.length;
 }
