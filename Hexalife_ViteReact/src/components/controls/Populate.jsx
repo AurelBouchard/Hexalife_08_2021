@@ -1,6 +1,16 @@
 import React from "react";
 
-export function Populate({density, onChangeDensity}) {
+
+/**
+ * Return a styled range selector.
+ * Allow to change the initial number of living cells.
+ *
+ * @param density 0.1 =< Float =< 0.9, % of chance that each cell is living,
+ * @param onChangeDensity f,
+ * @returns {JSX.Element}
+ * @constructor
+ */
+export default function Populate({density, onChangeDensity}) {
     return (
         <div className="range btm-spaced">
             <label className="label">

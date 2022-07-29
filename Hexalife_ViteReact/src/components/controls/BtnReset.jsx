@@ -1,5 +1,14 @@
 import React from 'react';
 
+
+/**
+ * Return a styled button.
+ *
+ * @param field Field object we are working on,
+ * @param handleReset f,
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function BtnReset({field, handleReset}) {
     return (
         <div className='logi'>

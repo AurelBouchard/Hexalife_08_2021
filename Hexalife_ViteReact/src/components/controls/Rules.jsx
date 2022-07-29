@@ -1,7 +1,18 @@
 import React from "react";
+import Checkbox from "./Checkbox";
 
 
-export function Rules({rules, onChangeRules}) {
+/**
+ * Return 2 set of checkboxes.
+ * One checkbox is for choose what number of surrounding alive cells will kill the the surrounded cell.
+ * The other is for choose what number of alive cell will make a cell comes to life.
+ *
+ * @param rules Rules object : { 'spawn': [Integer], 'die': [Integer], 'changing': [Integer]},
+ * @param onChangeRules f,
+ * @returns {JSX.Element}
+ * @constructor
+ */
+export default function Rules({rules, onChangeRules}) {
     const options = {
         die: ["0", "1", "2", "3", "4", "5", "6"],
         spawn: ["2", "3", "4", "5", "6"]
@@ -46,21 +57,7 @@ export function Rules({rules, onChangeRules}) {
         
         onChangeRules(newRules())
     }
-    
-    const Checkbox = ({selected, option, onCheckboxChange, className}) => {
-        return (
-            <div className='check'>
-                <label>{option}</label>
-                <input
-                    type="checkbox"
-                    name={option}
-                    className={className}
-                    checked={selected.includes(parseInt(option))}
-                    onChange={onCheckboxChange}
-                />
-            </div>
-        )
-    }
+
     
     
     return (

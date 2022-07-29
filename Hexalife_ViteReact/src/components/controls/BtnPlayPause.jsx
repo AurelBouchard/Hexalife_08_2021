@@ -1,5 +1,14 @@
 import React from 'react';
 
+
+/**
+ * Return a styled button.
+ *
+ * @param togglePlayPause f,
+ * @param isPlaying boolean,
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function BtnPlayPause({togglePlayPause, isPlaying}) {
     return (
         <div className='logi'>
