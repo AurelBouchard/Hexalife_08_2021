@@ -1,7 +1,7 @@
 # Hexalife
 **HEXAGONAL VERSION OF THE FAMOUS GAME OF LIFE**
 
-![Hexalife demo](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/sample.gif)
+![Hexalife demo](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/hexalife_sample.gif)
 
 > *Wikipedia :*
 >
@@ -34,7 +34,7 @@ Contents
 
 The square base does not accurately reflect reality; a box in a corner is indeed more distant than a box at its side next to it.
 
-![Empty pattern](Hexalife_ViteReact/https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/empty_pattern.png)
+![Empty pattern](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/empty_pattern.png)
 
 The hexagonal base solves this problem: each box is at equal distance from all its direct neighbors (center to center).
 It is a widespread structure (or pattern) in nature.
