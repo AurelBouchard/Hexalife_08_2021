@@ -1,7 +1,7 @@
 # Hexalife
 **HEXAGONAL VERSION OF THE FAMOUS GAME OF LIFE**
 
-![Hexalife demo](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/sample.gif)
+![Hexalife demo](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/hexalife_sample.gif)
 
 > *Wikipedia :*
 >
