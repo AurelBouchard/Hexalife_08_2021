@@ -1,7 +1,7 @@
 # Hexalife
 **HEXAGONAL VERSION OF THE FAMOUS GAME OF LIFE**
 
-![Hexalife demo](user_guide/sample.gif)
+![Hexalife demo](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/sample.gif)
 
 > *Wikipedia :*
 >
@@ -34,7 +34,7 @@ Contents
 
 The square base does not accurately reflect reality; a box in a corner is indeed more distant than a box at its side next to it.
 
-![Empty pattern](user_guide/empty_pattern.png)
+![Empty pattern](Hexalife_ViteReact/https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/empty_pattern.png)
 
 The hexagonal base solves this problem: each box is at equal distance from all its direct neighbors (center to center).
 It is a widespread structure (or pattern) in nature.
@@ -64,7 +64,7 @@ Let consider that the first cell is at layer 0.
 
 Each cell surrounding that first one are on layer 1.
 
-![Layers](user_guide/layer.png)
+![Layers](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/layer.png)
 
 There is 6 cells at layer 1, 12 cells at layer 2, and so on ...
 
@@ -82,7 +82,7 @@ Then the numbering go clockwise around the minimum value of the last layer, here
 
 On top of 1 comes the next cell value: here it is 7, then 8 comes between 7, 2 and 1.
 
-![Numbering](user_guide/numbering.png)
+![Numbering](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/numbering.png)
 
 Now if we continue clockwise, the cell is already numbered with 2.
 
@@ -117,7 +117,7 @@ Layer 2 : 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 9
 
 The next layer will start at 19 (on top of 7).
 
-![Numbered pattern](user_guide/numbered_pattern.png)
+![Numbered pattern](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/numbered_pattern.png)
 
 Maximum number of layers is fixed to 30, which give us a field of 2 790 cells, and 16 740 links.
 
@@ -134,7 +134,7 @@ After generating the field, i.e. all the cells and linking, each cell which is n
 
 When you set this parameter to 45%, each cell has 45% of chance to contain a living unit, so the field is **roughly** containing 45% of living units.
 
-![45% chance of life](user_guide/chanceOfLife.png)
+![45% chance of life](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/chanceOfLife.png)
 
 
 <br />
@@ -199,7 +199,7 @@ neutral is normal and hostile is opposite of fertile.
 ## 4. Controls
 The control panel allows user to change game parameters:
 
-![Controls](user_guide/controls.png)
+![Controls](https://github.com/AurelBouchard/Hexalife_08_2021/blob/master/Hexalife_ViteReact/user_guide/controls.png)
 
 - Reset button: reset a new field with current parameters
 - Play/Pause button: start and stop generation cycle
